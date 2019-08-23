@@ -121,10 +121,11 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body onload="insideBodyLoad(1200000, 1200000, false, &#39;Patient Online Services - Test Details&#39;, &#39;&#39;); dataTileLoad(); specialEffects(); setFederatedLogoutMode(true);" class="hasNoCommunityLinks isInside color1 md_labdetail ready">
+<body onload="insideBodyLoad(1200000, 1200000, false, &#39;Patient Online Services - Test Details&#39;, &#39;&#39;); dataTileLoad(); specialEffects(); setFederatedLogoutMode(true);" class="hasNoCommunityLinks isInside color1 md_labdetail ready"
+itemscope itemtype="http://fhirschema.org/Observation">
 <script src="file:///Users/lusha/Downloads/inside_data/mayo.js"></script>
 <div id="wrap" style="top: 0px;">
-    <div class="printheader">Name: Anon E Mouse | DOB: 8/17/194 | MRN: 5-123-4567 | PCP: Prac Ticioner, APRN, C.N.P.,
+    <div class="printheader">Name: <span itemprop="Observation.subject">Anon E Mouse</span> | DOB: 8/17/194 | MRN: 5-123-4567 | PCP: Prac Ticioner, APRN, C.N.P.,
         D.N.P.
     </div>
     <img class="mayoimage" src="file:///Users/lusha/Downloads/inside_data/mayologo.png" style="top:26px;left:20px">
@@ -176,8 +177,8 @@
                             </thead>
                             <tbody>
                             <tr class="odd">
-                                <td class="nameCol srchbl" headers="components57_col0">Cholesterol, Total, S</td>
-                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span>231<span class="unit"> mg/dL</span></td>
+                                <td class="nameCol srchbl" headers="components57_col0"><span itemprop="Observation.component">Cholesterol, Total, S</span></td>
+                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span><span itemprop="Observation.valueQuantity">231</span><span class="unit"> mg/dL</span></td>
                                 <td class="rangeCol" headers="components57_col2"><span class="label sm-only">Standard Range</span>mg/dL
                                 </td>
                             </tr>
@@ -187,8 +188,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="nameCol srchbl" headers="components57_col0">Triglycerides, S</td>
-                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span>174<span class="unit"> mg/dL</span></td>
+                                <td class="nameCol srchbl" headers="components57_col0"><span itemprop="Observation.component">Triglycerides, S</span></td>
+                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span><span itemprop="Observation.valueQuantity">174</span><span class="unit"> mg/dL</span></td>
                                 <td class="rangeCol" headers="components57_col2"><span class="label sm-only">Standard Range</span>mg/dL
                                 </td>
                             </tr>
@@ -198,15 +199,15 @@
                                 </td>
                             </tr>
                             <tr class="odd">
-                                <td class="nameCol srchbl" headers="components57_col0">Cholesterol, HDL, S</td>
-                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span>48<span class="unit"> mg/dL</span></td>
+                                <td class="nameCol srchbl" headers="components57_col0"><span itemprop="Observation.component">Cholesterol, HDL, S</span></td>
+                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span><span itemprop="Observation.valueQuantity">48</span><span class="unit"> mg/dL</span></td>
                                 <td class="rangeCol" headers="components57_col2"><span class="label sm-only">Standard Range</span>&gt;=40
                                     mg/dL
                                 </td>
                             </tr>
                             <tr>
-                                <td class="nameCol srchbl" headers="components57_col0">Calculated LDL</td>
-                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span>148<span class="unit"> mg/dL</span></td>
+                                <td class="nameCol srchbl" headers="components57_col0"><span itemprop="Observation.component">Calculated LDL</span></td>
+                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span><span itemprop="Observation.valueQuantity">148</span><span class="unit"> mg/dL</span></td>
                                 <td class="rangeCol" headers="components57_col2"><span class="label sm-only">Standard Range</span>mg/dL
                                 </td>
                             </tr>
@@ -217,8 +218,8 @@
                                 </td>
                             </tr>
                             <tr class="odd">
-                                <td class="nameCol srchbl" headers="components57_col0">Non HDL Cholesterol</td>
-                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span>183<span class="unit"> mg/dL</span></td>
+                                <td class="nameCol srchbl" headers="components57_col0"><span itemprop="Observation.component">Non HDL Cholesterol</span></td>
+                                <td class="valueCol" headers="components57_col1"><span class="label sm-only">Your Value</span><span itemprop="Observation.valueQuantity">183</span><span class="unit"> mg/dL</span></td>
                                 <td class="rangeCol" headers="components57_col2"><span class="label sm-only">Standard Range</span>mg/dL
                                 </td>
                             </tr>
@@ -233,7 +234,7 @@
                     </div>
                 </div>
                 <div class="section" id="general"><h2 class="header">General Information</h2>
-                    <div class="content"><p> Ordered by <span class="srchbl">Prac Ticioner, APRN, C.N.P., D.N.P.</span>
+                    <div class="content"><p> Ordered by <span class="srchbl"  itemprop="Observation.performer">Prac Ticioner, APRN, C.N.P., D.N.P.</span>
                     </p>
                         <p> Collected on 10/31/2018 7:46 AM from Blood, Venous (Blood)
                         </p>
