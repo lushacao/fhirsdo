@@ -1,5 +1,7 @@
 
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-stylesheet href="../../stylesheet/spl.xsl" type="text/xsl"?><document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-stylesheet href="../../stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd"
+vocab ="http://fhirschema.org/">
   <id root="e43ec3c7-bb5b-4a51-9595-97d99713bda7"/>
   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
   <title>Advil<sup>®</sup>
@@ -464,14 +466,14 @@
             <section>
               <id root="076d1612-0114-4099-a3db-8234d70ee081"/>
               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
-              <text>
+              <text typeof="MedicationKnowledge">
                 <table width="60%">
                   <col align="left" valign="bottom" width="50%"/>
                   <col align="right" valign="bottom" width="50%"/>
                   <thead>
                     <tr>
                       <th>
-                        <content styleCode="italics">Active ingredients<br/>(in each tablet)</content>
+                        <content styleCode="italics">Active ingredients<br/>(in each <span property="MedicationKnowledge.doseForm">tablet</span>)</content>
                       </th>
                       <th>
                         <content styleCode="italics">Purposes</content>
@@ -480,16 +482,16 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Chlorpheniramine maleate 4 mg</td>
+                      <td><span property="MedicationKnowledge.ingredient">Chlorpheniramine maleate</span> <span property="MedicationKnowledge.ingredient.strengthRatio">4 mg</span></td>
                       <td>Antihistamine</td>
                     </tr>
                     <tr>
-                      <td>Ibuprofen 200 mg (NSAID)<footnote>nonsteroidal anti-inflammatory drug</footnote>
+                      <td><span property="MedicationKnowledge.ingredient">Ibuprofen</span></td> <span property="MedicationKnowledge.ingredient.strengthRatio">200 mg</span> (NSAID)<footnote>nonsteroidal anti-inflammatory drug</footnote>
                       </td>
                       <td>Pain reliever/Fever reducer</td>
                     </tr>
                     <tr>
-                      <td>Phenylephrine HCl 10 mg</td>
+                      <td><span property="MedicationKnowledge.ingredient">Phenylephrine HCl</span> <span property="MedicationKnowledge.ingredient.strengthRatio">10 mg</span></td>
                       <td>Nasal decongestant</td>
                     </tr>
                   </tbody>
